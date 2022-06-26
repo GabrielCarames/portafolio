@@ -1,0 +1,29 @@
+$backgroundGradientA: linear-gradient(90deg, rgba(0,11,36,1) 0%, rgba(61,9,121,1) 15%, rgba(66,99,242,1) 85%);
+$backgroundGradientB: linear-gradient(90deg,rgba(0, 11, 36, 1) 0%,rgba(61, 9, 121, 1) 30%,rgba(66, 99, 242, 1) 70%);
+$backgroundGradientC: linear-gradient(90deg,rgb(0, 8, 26) 0%,rgb(58, 9, 121) 30%,rgb(60, 49, 211) 70%);
+$fontFamily: 'Hind Siliguri', sans-serif;
+$primaryColor: #2C429F;
+$lightColor: #C2CBF2;
+$accentColor: #15204D;
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+  @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+  
+    @media screen and (min-width: $min-vw) {
+      @each $property in $properties {
+        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+      }
+    }
+  
+    @media screen and (min-width: $max-vw) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+}
