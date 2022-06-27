@@ -1,0 +1,58 @@
+$--r1: 82%;
+$--r2: 97%;
+$--b: 20px;
+$--r1-b: 126%;
+$--r2-b: 72%;
+$--b-b: 5px;
+
+.wavy-lane {
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  background: $backgroundGradientA;
+  background-size: 200% 200%;
+  animation: gradient 10s infinite reverse;
+  margin: 0;
+}
+.wavy-lane:before,
+.wavy-lane:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: calc(100% - var(--b, 10px));
+  -webkit-mask: radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p1, top), white 79.5%, transparent 80%) var(--d1, right),
+    radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p2, bottom), transparent 79.5%, white 80%) var(--d2, left);
+  mask: radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p1, top), white 79.5%, transparent 80%) var(--d1, right),
+    radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p2, bottom), transparent 79.5%, white 80%) var(--d2, left);
+  -webkit-mask-size: 50% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 50.2% 100%;
+  mask-repeat: no-repeat;
+}
+.wavy-lane:before {
+  top: 0;
+  background: $backgroundGradientA;
+  background-size: 205%;
+}
+.wavy-lane:after {
+  bottom: 0;
+  background: $backgroundGradientB;
+  background-size: 205%;
+  --p1: bottom;
+  --p2: top;
+  --d1: left;
+  --d2: right;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 50%;
+  }
+  50% {
+    background-position: 295% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}

@@ -32,4 +32,8 @@ html {
   }
 }
 
-@import "./components/navbar";
+@import "./sections/navbar";
+@import "./sections/aboutme";
+
+@import "./components/button";
+@import "./components/wavylane";

@@ -1,0 +1,20 @@
+.button {
+  width: 170px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #3f30ad;
+  color: $textColor;
+  font-family: $fontFamily;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0px 0px 20px 0px black;
+  cursor: pointer;
+  transition: all 200ms;
+  &.undo {
+    display: none;
+  }
+  &:hover {
+    transform: scale(1.03);
+    opacity: 0.5;
+  }
+}
