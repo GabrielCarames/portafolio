@@ -5,15 +5,32 @@ $--r1-b: 126%;
 $--r2-b: 72%;
 $--b-b: 5px;
 
+.container {
+  position: relative;
+}
+
+.hide {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  background: $backgroundGradientA;
+  background-size: 200% 200%;
+  z-index: 4;
+}
+
 .wavy-lane {
-  height: 300px;
+  width: 100%;
+  @include fluid-type(height, 600px, 1200px, 200px, 300px);
   margin: 10px;
   position: relative;
   background: $backgroundGradientA;
   background-size: 200% 200%;
   animation: gradient 10s infinite reverse;
   margin: 0;
+  margin-bottom: 40px;
 }
+
 .wavy-lane:before,
 .wavy-lane:after {
   content: "";
@@ -34,11 +51,14 @@ $--b-b: 5px;
   top: 0;
   background: $backgroundGradientA;
   background-size: 205%;
+  // background-color: red;
+  // margin-top: -100px;
 }
 .wavy-lane:after {
   bottom: 0;
   background: $backgroundGradientB;
   background-size: 205%;
+  // height: 500px;
   --p1: bottom;
   --p2: top;
   --d1: left;

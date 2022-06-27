@@ -1,3 +1,8 @@
 export default function WavyLane() {
-  return <div className="wavy-lane"></div>
+  return (
+    <div className="container">
+      <div className="hide"></div>
+      <div className="wavy-lane"></div>
+    </div>
+  )
 }

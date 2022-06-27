@@ -1,4 +1,12 @@
+import { useState } from "react"
+
 export default function Navbar() {
+  const [navbar, setNavbar] = useState(false)
+
+  const handleNavbar = () => (window.scrollY >= 50 ? setNavbar(true) : setNavbar(false))
+
+  window.addEventListener("scroll", handleNavbar)
+
   return (
     <nav className="navbar">
       <ul className="nav">
@@ -19,6 +27,7 @@ export default function Navbar() {
           <p className="nav__text">Contacto</p>
         </li>
       </ul>
+      <div className={navbar ? "navbar__line active" : "navbar__line"}></div>
     </nav>
   )
 }

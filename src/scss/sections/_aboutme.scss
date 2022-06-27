@@ -1,20 +1,60 @@
 .about-me {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 65vh;
+  height: 60vh;
+  // height: 100vh;
   box-sizing: border-box;
+  transition: 1s;
+  padding-top: 150px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @include fluid-type(padding-top, 600px, 1200px, 50px, 150px);
+  &.active {
+    padding-top: 0;
+    // height: 65vh;
+    height: max-content;
+  }
   .header {
     display: flex;
-    gap: 100px;
-    margin-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 50px;
+    transition: all 1s;
+    &.hover {
+      transform: scale(1.05);
+    }
+    &.active {
+      transform: scale(0.8);
+      .header__image {
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0.8;
+          transform: scale(1.04);
+        }
+      }
+      .text {
+        .header__name {
+        }
+        .header__title {
+        }
+        .button {
+          transform: scale(1.12);
+        }
+      }
+    }
     .header__image {
       width: 300px;
-      height: 300px;
+      @include fluid-type(width, 600px, 1200px, 200px, 300px);
+      @include fluid-type(height, 600px, 1200px, 200px, 300px);
       border-radius: 200px;
       object-fit: cover;
       box-shadow: 0px 0px 50px 10px black;
+      &.active {
+        opacity: 0.5;
+      }
     }
     .text {
       display: flex;
@@ -23,12 +63,13 @@
       gap: 20px;
       color: $textColor;
       .header__name {
-        font-size: 56px;
+        @include fluid-type(font-size, 600px, 1200px, 40px, 56px);
         font-weight: 500;
         margin: 0;
+        line-height: 1;
       }
       .header__title {
-        font-size: 34px;
+        @include fluid-type(font-size, 600px, 1200px, 24px, 34px);
         color: $secundaryTextColor;
         font-weight: 500;
         text-align: center;
@@ -37,10 +78,52 @@
     }
   }
   .paragraph {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $secundaryTextColor;
+    width: 100%;
+    max-width: 900px;
+    font-size: 20px;
+    padding-top: 1000px;
+    transition: padding 1s;
+    &.active {
+      position: relative;
+      visibility: visible;
+      padding: 0;
+    }
+    b {
+      color: $textColor;
+    }
     .paragraph__title {
+      color: $textColor;
     }
     .paragraph__text {
+    }
+    .paragraph__link {
+      color: violet;
+      font-weight: 900;
+      transition: color 0.25s;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 637px) {
+  .about-me {
+    height: 80vh;
+
+    &.active {
+    }
+    .paragraph {
+      font-size: 18px;
+      .paragraph__title {
+        text-align: center;
+      }
     }
   }
 }

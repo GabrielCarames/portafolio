@@ -32,11 +32,14 @@ export default function AboutMe() {
         <p className="paragraph__text">
           Hola, soy <b> Gabriel Caramés, desarrollador web</b>. Me enfoco especialmente en la programación <b> Front-end </b>con
           <b> React.js</b>.
-          <br /> La tecnología, programación y el progreso son las cosas que más me apasionan. Soy partidario de que las decisiones se deben
-          realizar correctamente, o directamente no hacerlas. Tengo capacidad de <b>liderazgo</b>, <b>trabajo bien en equipo</b> y mantengo
-          un<b> perfil tranquilo</b> y<b> proactivo</b>.
-          <br />
-          Me gusta esforzarme y aprender continuamente para superarme día a día. Siempre hay algo nuevo que mejorar.
+          <br /> La <b> tecnología, programación y el progreso </b> son de las cosas que más me interesan. Me gusta creer que las decisiones
+          se deben tomar correctamente, o directamente no hacerlas.
+          <br /> Me considero <b>autodidacta</b>, me esfuerzo y aprendo continuamente por mi cuenta para superarme día a día. Siempre hay
+          algo nuevo que mejorar.
+          <br /> Actualmente <b>emprendo</b> en diseño y venta de páginas web.{" "}
+          <a className="paragraph__link" href="https://www.parchespaginasweb.com/" target="_blank">
+            Parches Páginas Web
+          </a>
         </p>
       </div>
     </section>

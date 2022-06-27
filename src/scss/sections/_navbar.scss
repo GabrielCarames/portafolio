@@ -7,6 +7,22 @@
   height: 115px;
   position: sticky;
   top: 0;
+  z-index: 1;
+  background: $backgroundGradientA;
+  background-size: 200% 200%;
+  .navbar__line {
+    visibility: hidden;
+  }
+  .navbar__line.active {
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    background: linear-gradient(to right, rgb(0, 13, 44) 0%, rgb(72, 11, 143) 30%, rgb(75, 105, 241) 70%);
+    background-size: 200% 200%;
+    animation: gradient 16s infinite reverse;
+  }
   .nav {
     display: flex;
     justify-content: right;
