@@ -16,8 +16,6 @@ html {
     font-family: $fontFamily;
     font-size: 14px;
     font-weight: 400;
-    background: $backgroundGradientA;
-    background-size: 205%;
     #root {
       height: 100%;
       .App {
@@ -34,6 +32,8 @@ html {
 
 @import "./sections/navbar";
 @import "./sections/aboutme";
+@import "./sections/technologies";
 
 @import "./components/button";
 @import "./components/wavylane";
+@import "./components/circularcard";

@@ -1,0 +1,26 @@
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: $backgroundGradientB;
+  background-size: 205%;
+  width: 100%;
+  height: max-content;
+  padding: 0 20px;
+  box-sizing: border-box;
+  .technologies__title {
+    margin: 0;
+    color: $textColor;
+    @include fluid-type(font-size, 600px, 1200px, 30px, 40px);
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+    max-width: 900px;
+  }
+}

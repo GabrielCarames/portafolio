@@ -1,8 +1,8 @@
-export default function WavyLane() {
+export default function WavyLane({ background }) {
   return (
     <div className="container">
-      <div className="hide"></div>
-      <div className="wavy-lane"></div>
+      <div className={`hide ${background}`}></div>
+      <div className={`wavy-lane ${background}`}></div>
     </div>
   )
 }

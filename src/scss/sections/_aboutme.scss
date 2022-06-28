@@ -4,16 +4,18 @@
   align-items: center;
   width: 100%;
   height: 60vh;
-  // height: 100vh;
+  background: $backgroundGradientA;
+  background-size: 205%;
   box-sizing: border-box;
   transition: 1s;
   padding-top: 150px;
   padding: 0 20px;
   box-sizing: border-box;
   @include fluid-type(padding-top, 600px, 1200px, 50px, 150px);
+  position: relative;
+  z-index: 3;
   &.active {
     padding-top: 0;
-    // height: 65vh;
     height: max-content;
   }
   .header {
@@ -36,10 +38,6 @@
         }
       }
       .text {
-        .header__name {
-        }
-        .header__title {
-        }
         .button {
           transform: scale(1.12);
         }
@@ -51,7 +49,7 @@
       @include fluid-type(height, 600px, 1200px, 200px, 300px);
       border-radius: 200px;
       object-fit: cover;
-      box-shadow: 0px 0px 50px 10px black;
+      box-shadow: 0px 0px 30px 5px black;
       &.active {
         opacity: 0.5;
       }
@@ -100,8 +98,6 @@
     .paragraph__title {
       color: $textColor;
     }
-    .paragraph__text {
-    }
     .paragraph__link {
       color: violet;
       font-weight: 900;
@@ -116,9 +112,6 @@
 @media screen and (min-width: 320px) and (max-width: 637px) {
   .about-me {
     height: 80vh;
-
-    &.active {
-    }
     .paragraph {
       font-size: 18px;
       .paragraph__title {

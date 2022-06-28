@@ -14,9 +14,15 @@ $--b-b: 5px;
   height: 40px;
   position: absolute;
   top: 0;
-  background: $backgroundGradientA;
-  background-size: 200% 200%;
-  z-index: 4;
+  z-index: 1;
+  &.A {
+    background: $backgroundGradientA;
+    background-size: 205%;
+  }
+  &.B {
+    background: $backgroundGradientB;
+    background-size: 205%;
+  }
 }
 
 .wavy-lane {
@@ -28,41 +34,52 @@ $--b-b: 5px;
   background-size: 200% 200%;
   animation: gradient 10s infinite reverse;
   margin: 0;
-  margin-bottom: 40px;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: calc(100% - var(--b, 10px));
+    -webkit-mask: radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p1, top), white 79.5%, transparent 80%) var(--d1, right),
+      radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p2, bottom), transparent 79.5%, white 80%) var(--d2, left);
+    mask: radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p1, top), white 79.5%, transparent 80%) var(--d1, right),
+      radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p2, bottom), transparent 79.5%, white 80%) var(--d2, left);
+    -webkit-mask-size: 50% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 50.2% 100%;
+    mask-repeat: no-repeat;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+    --p1: bottom;
+    --p2: top;
+    --d1: left;
+    --d2: right;
+  }
 }
-
-.wavy-lane:before,
-.wavy-lane:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: calc(100% - var(--b, 10px));
-  -webkit-mask: radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p1, top), white 79.5%, transparent 80%) var(--d1, right),
-    radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p2, bottom), transparent 79.5%, white 80%) var(--d2, left);
-  mask: radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p1, top), white 79.5%, transparent 80%) var(--d1, right),
-    radial-gradient(var(--r1, 100%) var(--r2, 80%) at var(--p2, bottom), transparent 79.5%, white 80%) var(--d2, left);
-  -webkit-mask-size: 50% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-size: 50.2% 100%;
-  mask-repeat: no-repeat;
+.wavy-lane.A {
+  &:before {
+    background: $backgroundGradientA;
+    background-size: 205%;
+  }
+  &:after {
+    background: $backgroundGradientB;
+    background-size: 205%;
+  }
 }
-.wavy-lane:before {
-  top: 0;
-  background: $backgroundGradientA;
-  background-size: 205%;
-  // background-color: red;
-  // margin-top: -100px;
-}
-.wavy-lane:after {
-  bottom: 0;
-  background: $backgroundGradientB;
-  background-size: 205%;
-  // height: 500px;
-  --p1: bottom;
-  --p2: top;
-  --d1: left;
-  --d2: right;
+.wavy-lane.B {
+  &:before {
+    background: $backgroundGradientB;
+    background-size: 205%;
+  }
+  &:after {
+    background: $backgroundGradientC;
+    background-size: 205%;
+  }
 }
 
 @keyframes gradient {
