@@ -8,6 +8,25 @@ $primaryColor: #2c429f;
 $lightColor: #c2cbf2;
 $accentColor: #15204d;
 
+@mixin section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-size: 205%;
+  width: 100%;
+  height: max-content;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@mixin title {
+  margin: 0;
+  color: $textColor;
+  @include fluid-type(font-size, 600px, 1200px, 30px, 40px);
+}
+
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
