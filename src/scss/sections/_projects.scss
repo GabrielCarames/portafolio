@@ -1,0 +1,16 @@
+.projects {
+  background: $backgroundGradientC;
+  @include section;
+  &__title {
+    @include title;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    max-width: 900px;
+  }
+}

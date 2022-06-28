@@ -8,6 +8,7 @@ import Navbar from "./sections/Navbar"
 import animations from "./jsFiles/animations"
 import WavyLane from "./components/WavyLane"
 import Contact from "./sections/Contact"
+import Projects from "./sections/Projects"
 
 function App() {
   const [animation, setAnimation] = useState(animations)
@@ -24,6 +25,7 @@ function App() {
             <WavyLane background={"A"} />
             <Technologies />
             <WavyLane background={"B"} />
+            <Projects />
             <WavyLane background={"B"} />
             <Contact />
           </ActiveContext.Provider>

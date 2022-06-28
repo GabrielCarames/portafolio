@@ -11,15 +11,15 @@ import github from "../assets/icons/github.png"
 
 export default function Technologies() {
   const items = [
-    { text: "React.js", image: react, link: "https://es.reactjs.org/" },
-    { text: "JavaScript", image: javaScript, link: "https://developer.mozilla.org/es/docs/Web/JavaScript" },
-    { text: "HTML", image: html, link: "https://developer.mozilla.org/es/docs/Web/HTML" },
-    { text: "CSS", image: css, link: "https://developer.mozilla.org/es/docs/Web/CSS" },
-    { text: "Sass", image: sass, link: "https://sass-lang.com/" },
-    { text: "Redux", image: redux, link: "https://es.redux.js.org/" },
-    { text: "Figma", image: figma, link: "https://www.figma.com/" },
-    { text: "Git", image: git, link: "https://git-scm.com/" },
-    { text: "Github", image: github, link: "https://github.com/" }
+    { name: "React.js", image: react, link: "https://es.reactjs.org/" },
+    { name: "JavaScript", image: javaScript, link: "https://developer.mozilla.org/es/docs/Web/JavaScript" },
+    { name: "HTML", image: html, link: "https://developer.mozilla.org/es/docs/Web/HTML" },
+    { name: "CSS", image: css, link: "https://developer.mozilla.org/es/docs/Web/CSS" },
+    { name: "Sass", image: sass, link: "https://sass-lang.com/" },
+    { name: "Redux", image: redux, link: "https://es.redux.js.org/" },
+    { name: "Figma", image: figma, link: "https://www.figma.com/" },
+    { name: "Git", image: git, link: "https://git-scm.com/" },
+    { name: "Github", image: github, link: "https://github.com/" }
   ]
 
   return (
@@ -27,7 +27,7 @@ export default function Technologies() {
       <h3 className="technologies__title">Tecnologías</h3>
       <ul className="list">
         {items.map((item, index) => (
-          <CircularCard image={item.image} text={item.text} link={item.link} key={index} />
+          <CircularCard image={item.image} name={item.name} link={item.link} key={index} />
         ))}
       </ul>
     </div>
