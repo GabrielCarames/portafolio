@@ -25,6 +25,8 @@
     column-gap: 100px;
     row-gap: 50px;
     transition: all 1s;
+    width: 100%;
+    max-width: 900px;
     &.hover {
       transform: scale(1.05);
     }

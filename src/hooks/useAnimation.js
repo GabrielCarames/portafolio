@@ -3,7 +3,7 @@ import { AnimationsContext } from "../contexts/AnimationsContext"
 import { ActionContext } from "../contexts/ActionContext"
 import { ActiveContext } from "../contexts/ActiveContext"
 
-export function useAnimation() {
+export const useAnimation = () => {
   const { action, setAction } = useContext(ActionContext)
   const { animation } = useContext(AnimationsContext)
   const { setActive } = useContext(ActiveContext)

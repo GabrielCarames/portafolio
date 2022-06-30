@@ -23,6 +23,10 @@ $--b-b: 5px;
     background: $backgroundGradientB;
     background-size: 205%;
   }
+  &.C {
+    background: $backgroundGradientC;
+    background-size: 205%;
+  }
 }
 
 .wavy-lane {
@@ -78,6 +82,16 @@ $--b-b: 5px;
   }
   &:after {
     background: $backgroundGradientC;
+    background-size: 205%;
+  }
+}
+.wavy-lane.C {
+  &:before {
+    background: $backgroundGradientC;
+    background-size: 205%;
+  }
+  &:after {
+    background: $backgroundGradientA;
     background-size: 205%;
   }
 }

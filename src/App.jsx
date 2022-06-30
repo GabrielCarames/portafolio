@@ -26,7 +26,7 @@ function App() {
             <Technologies />
             <WavyLane background={"B"} />
             <Projects />
-            <WavyLane background={"B"} />
+            <WavyLane background={"C"} />
             <Contact />
           </ActiveContext.Provider>
         </AnimationsContext.Provider>
