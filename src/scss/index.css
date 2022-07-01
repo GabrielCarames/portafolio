@@ -25,6 +25,13 @@ html body #root .App ul {
   padding: 0;
   margin: 0;
 }
+html body #root .App .scroll {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
 .navbar {
   display: flex;
@@ -299,6 +306,7 @@ html body #root .App ul {
   height: max-content;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
 }
 .technologies .technologies__title {
   margin: 0;
@@ -338,6 +346,7 @@ html body #root .App ul {
   height: max-content;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
   padding: 20px;
 }
 .contact__title {
@@ -375,6 +384,7 @@ html body #root .App ul {
   height: max-content;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
   padding: 20px;
   box-sizing: border-box;
 }

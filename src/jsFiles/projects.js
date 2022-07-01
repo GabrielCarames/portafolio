@@ -71,8 +71,8 @@ export const projects = [
     },
     {
       links: {
-        repository: "https://google-search-clone-gabrielcarames.vercel.app/",
-        visit: "https://github.com/GabrielCarames/Google-Search-clone"
+        repository: "https://github.com/GabrielCarames/Google-Search-clone",
+        visit: "https://google-search-clone-gabrielcarames.vercel.app/"
       }
     }
   ],
@@ -92,8 +92,8 @@ export const projects = [
     },
     {
       links: {
-        repository: "https://google-translate-clone-gabrielcarames.vercel.app/",
-        visit: "https://github.com/GabrielCarames/Google-Translate-clone"
+        repository: "https://github.com/GabrielCarames/Google-Translate-clone",
+        visit: "https://google-translate-clone-gabrielcarames.vercel.app/"
       }
     }
   ],
@@ -108,7 +108,7 @@ export const projects = [
         { name: "Node.js", icon: node, backgroundColor: "#202c24", color: "#95deae" },
         { name: "Express.js", icon: express, backgroundColor: "#2c2d2e", color: "#d5dae2" },
         { name: "Socket.io", icon: socket, backgroundColor: "#2B2C2E", color: "#ffffff" },
-        { name: "firebase", icon: firebase, backgroundColor: "#302e1d", color: "#f2e885" },
+        { name: "Firebase Auth", icon: firebase, backgroundColor: "#302e1d", color: "#f2e885" },
         { name: "MongoDB", icon: mongodb, backgroundColor: "#302e1d", color: "#f2e885" }
       ]
     },
@@ -132,7 +132,7 @@ export const projects = [
       ]
     },
     {
-      description: `Clon de Youtube utilizando React y la API Youtube API v3. La aplicación cuenta con las funcionalidades más importantes como Inicio, suscripciones, reproductor de videos, comentarios, videos relacionados, buscador de videos. Cada video muestra una serie de datos tal como descripción, visualizaciones, likes y mucho más.`
+      description: `Clon de Youtube utilizando React y la Youtube API v3. La aplicación cuenta con las funcionalidades más importantes, como Inicio, suscripciones, reproductor de videos, comentarios, videos relacionados, buscador de videos. Cada video muestra una serie de datos tal como descripción, visualizaciones, likes y mucho más.`
     },
     {
       links: {

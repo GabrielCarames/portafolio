@@ -8,7 +8,8 @@ export default function AboutMe() {
   const { handleAnimation } = useAnimation()
 
   return (
-    <section id="about-me" /**che esto era main-nosequecuidado */ className={classNameDefine("about-me")}>
+    <section id="about-me" className={classNameDefine("about-me")}>
+      <div className="scroll" name="about-me"></div>
       <header className={classNameDefine("header")}>
         <img
           className={classNameDefine("header__image")}
@@ -36,7 +37,7 @@ export default function AboutMe() {
           se deben tomar correctamente, o directamente no hacerlas.
           <br /> Me considero <b>autodidacta</b>, me esfuerzo y aprendo continuamente por mi cuenta para superarme día a día. Siempre hay
           algo nuevo que mejorar.
-          <br /> Actualmente <b>emprendo</b> en diseño y venta de páginas web.{" "}
+          <br /> Actualmente estoy <b>emprendiento</b> en un negocio de diseño y venta de páginas web.{" "}
           <a className="paragraph__link" href="https://www.parchespaginasweb.com/" target="_blank">
             Parches Páginas Web
           </a>

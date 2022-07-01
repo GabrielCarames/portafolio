@@ -1,13 +1,13 @@
 import CircularCard from "../components/CircularCard"
-import react from "../assets/icons/react.png"
 import javaScript from "../assets/icons/javascript.png"
-import html from "../assets/icons/html.png"
-import css from "../assets/icons/css.png"
-import sass from "../assets/icons/sass.png"
+import github from "../assets/icons/github.png"
+import react from "../assets/icons/react.png"
 import redux from "../assets/icons/redux.png"
 import figma from "../assets/icons/figma.png"
+import html from "../assets/icons/html.png"
+import sass from "../assets/icons/sass.png"
+import css from "../assets/icons/css.png"
 import git from "../assets/icons/git.png"
-import github from "../assets/icons/github.png"
 
 export default function Technologies() {
   const items = [
@@ -24,6 +24,7 @@ export default function Technologies() {
 
   return (
     <div className="technologies">
+      <div className="scroll" name="technologies"></div>
       <h3 className="technologies__title">Tecnologías</h3>
       <ul className="list">
         {items.map((item, index) => (

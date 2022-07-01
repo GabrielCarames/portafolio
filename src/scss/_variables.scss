@@ -19,6 +19,7 @@ $accentColor: #15204d;
   height: max-content;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 @mixin title {

@@ -23,6 +23,7 @@ export default function Contact() {
 
   return (
     <div className="contact">
+      <div className="scroll" name="contact"></div>
       <h3 className="contact__title">Medios de contacto</h3>
       <ul className="list">
         {items.map((item, index) =>

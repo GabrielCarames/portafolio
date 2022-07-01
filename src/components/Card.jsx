@@ -1,5 +1,5 @@
-import Button from "./Button"
 import Tag from "./Tag"
+
 export default function Card({ title, image, technologies, description, links }) {
   return (
     <article className="card">

@@ -21,7 +21,6 @@ export const useAnimation = () => {
     let classNames
     const animationName = action[1]
     if (action) classNames = classNamesObtention(animationName)
-    console.log(classNames)
     switch (animationName) {
       case "animationA":
         setActive([...classNames])
