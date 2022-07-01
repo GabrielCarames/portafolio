@@ -1,6 +1,6 @@
 import CircularCard from "../components/CircularCard"
 import linkedin from "../assets/icons/linkedin.png"
-import whatsApp from "../assets/icons/whatsApp.png"
+import whatsApp from "../assets/icons/whatsapp.png"
 import github from "../assets/icons/github.png"
 import gmail from "../assets/icons/gmail.png"
 import curriculum from "../assets/Gabriel Caramés - Curriculum.pdf"
