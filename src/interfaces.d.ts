@@ -132,7 +132,6 @@ export interface useHandleScrollProps {
 export interface TimelineItemProps {
   title: string
   linkName: string
-  link: string
   date: string
   items?: string[]
   technologies: string[]

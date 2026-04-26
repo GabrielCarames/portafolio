@@ -4,7 +4,6 @@ import TechnologiesTags from './TechnologiesTags';
 export const TimelineItem = ({
   title,
   linkName,
-  link,
   date,
   items,
   technologies
