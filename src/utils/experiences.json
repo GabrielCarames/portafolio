@@ -1,6 +1,20 @@
 [
   {
     "id": 1,
+    "title": "Desarrollador frontend",
+    "linkName": "Inceptia AI",
+    "link": "/#",
+    "date": "Julio 2024 - Presente",
+    "items": [
+      "Planifico e integro soluciones desde cero para el manejo de bots de IA dentro de la plataforma, impactando directamente en +100 clientes activos.",
+      "Implementé un sistema de caché centralizado, reduciendo peticiones innecesarias y mejorando los tiempos de carga en un 40%.",
+      "Realizo pruebas automatizadas, aumentando la cobertura de código y reduciendo bugs en producción.",
+      "Ejecuto despliegues de forma recurrente, asegurando entregas estables y sin downtime crítico."
+    ],
+    "technologies": ["React.js", "TypeScript", "JavaScript", "Redux"]
+  },
+  {
+    "id": 2,
     "title": "Landing page para software",
     "linkName": "SmartPOS Cloud",
     "link": "/#",
@@ -13,7 +27,7 @@
     "technologies": ["React.js", "TailwindCSS", "JavaScript"]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Portafolio de imágenes para fotógrafo",
     "linkName": "Cesar Martinez Edo",
     "link": "https://cesaresedo.com/",
@@ -25,7 +39,7 @@
     "technologies": ["React.js", "TailwindCSS", "JavaScript"]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "E-commerce de productos agrícolas",
     "linkName": "XPLAZA",
     "link": "/#",
@@ -41,40 +55,6 @@
       "TypeScript",
       "JavaScript"
     ]
-  },
-  {
-    "id": 4,
-    "title": "Migración de tecnologías de página web",
-    "linkName": "Chrysler 65",
-    "link": "https://www.bumoai.com/",
-    "date": "Diciembre 2023",
-    "items": [
-      "Transformé una página web hecha con Next.js a tecnologías HTML, CSS, JS, manteniendo el mismo diseño, reduciendo el código, y mejorando las animaciones y el diseño responsive."
-    ],
-    "technologies": ["HTML", "JavaScript", "CSS"]
-  },
-  {
-    "id": 5,
-    "title": "Landing page para software de IA",
-    "linkName": "BumoAI",
-    "link": "https://www.bumoai.com/",
-    "date": "Diciembre 2023",
-    "items": [
-      "Llevé a cabo la creación de la landing page del programa “BumoAI”, destacando los beneficios e incentivando a los usuarios a contratar un plan de pago."
-    ],
-    "technologies": ["Next.js", "React.js", "TailwindCSS", "JavaScript"]
-  },
-  {
-    "id": 6,
-    "title": "Landing page para aplicación de eventos",
-    "linkName": "Festivus",
-    "link": "https://festivusapp.com/",
-    "date": "Diciembre 2023",
-    "items": [
-      "Llevé a cabo la creación de la landing page para la aplicación de eventos “Festivus”, destacando los beneficios e incentivando a que sea descargada por los usuarios.",
-      "Aseguré la correcta visualización de la página en el 100% de dispositivos, incluidos aquellos con navegadores antiguos y con poca compatibilidad con tecnologías actuales."
-    ],
-    "technologies": ["HTML", "JavaScript", "CSS"]
   },
   {
     "id": 7,
