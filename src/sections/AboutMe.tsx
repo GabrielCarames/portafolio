@@ -16,7 +16,7 @@ const AboutMe: FC<SectionProps> = ({ sectionRef }) => {
             Desarrollador Frontend
           </h2>
           <p className='mt-5 text-sm text-slate-100 lg:text-base'>
-            +2 años de experiencia como frontend, creando valor y convirtiendo
+            +3 años de experiencia como frontend, creando valor y convirtiendo
             proyectos en realidad. Comprometido en el trabajo en equipo y en la
             satisfacción de los clientes con el producto final. Actualmente
             trabajando en <b>Inceptia AI</b>
