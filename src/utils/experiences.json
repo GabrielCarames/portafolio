@@ -1,79 +1,58 @@
 [
   {
     "id": 1,
-    "title": "Desarrollador frontend",
+    "title": "Desarrollador Frontend",
     "linkName": "Inceptia AI",
     "link": "/#",
     "date": "Julio 2024 - Presente",
     "items": [
-      "Planifico e integro soluciones desde cero para el manejo de bots de IA dentro de la plataforma, impactando directamente en +100 clientes activos.",
-      "Implementé un sistema de caché centralizado, reduciendo peticiones innecesarias y mejorando los tiempos de carga en un 40%.",
-      "Realizo pruebas automatizadas, aumentando la cobertura de código y reduciendo bugs en producción.",
-      "Ejecuto despliegues de forma recurrente, asegurando entregas estables y sin downtime crítico."
+      "Lidero el diseño e implementación de soluciones frontend para la integración de bots de IA dentro de la plataforma, impactando directamente en +150 clientes activos.",
+      "Mejoré en un 40% los tiempos de carga mediante la implementación de un sistema de caché centralizado, optimizando rendimiento y escalabilidad.",
+      "Fortalezco la estabilidad del producto mediante pruebas automatizadas, reduciendo incidencias en producción y aumentando la confiabilidad de la plataforma.",
+      "Gestiono despliegues y releases de forma recurrente, garantizando entregas estables y alta disponibilidad."
     ],
-    "technologies": ["React.js", "TypeScript", "JavaScript", "Redux"]
+    "technologies": ["React.js", "TypeScript", "JavaScript", "Redux", "Figma"]
   },
   {
     "id": 2,
-    "title": "Landing page para software",
-    "linkName": "SmartPOS Cloud",
+    "title": "Desarrollador Frontend freelance",
+    "linkName": "Workana",
     "link": "/#",
-    "date": "Febrero 2024 - Abril 2024",
+    "date": "Noviembre 2023 - Julio 2024",
     "items": [
-      "Desarrollé la landing page ideal para “SmartPOS Cloud“, con el objetivo de vender los planes de pago para utilizar el software a través de un diseño atractivo.",
-      "Implementé la integración de pagos por Paypal a través de una API",
-      "Subí y alojé el sitio en un servidor de hosting y configuré el servicio de envío de emails."
-    ],
-    "technologies": ["React.js", "TailwindCSS", "JavaScript"]
-  },
-  {
-    "id": 3,
-    "title": "Portafolio de imágenes para fotógrafo",
-    "linkName": "Cesar Martinez Edo",
-    "link": "https://cesaresedo.com/",
-    "date": "Febrero 2024 - Abril 2024",
-    "items": [
-      "Creé el sitio web para alojar y presentar el contenido multimedia de un fotógrafo, permitiendo visualizar imágenes y videos.",
-      "Implementé un panel de administrador con inicio de sesión privado, en el que se pueden subir las imágenes, videos, categorías, entre otros datos."
-    ],
-    "technologies": ["React.js", "TailwindCSS", "JavaScript"]
-  },
-  {
-    "id": 4,
-    "title": "E-commerce de productos agrícolas",
-    "linkName": "XPLAZA",
-    "link": "/#",
-    "date": "Diciembre 2023 - Enero 2024",
-    "items": [
-      "Desarrollé la plataforma e-commerce del comercio agrícola “XPLAZA”, permitiendo a los usuarios comprar y vender productos.",
-      "Integré una barra de búsqueda, filtros por categorías, inicio de sesión, página de producto, galería de imágenes, paginación, entre otros."
+      "Lideré proyectos end-to-end, desde el relevamiento y definición de requerimientos hasta la entrega final, asegurando cumplimiento de deadlines y objetivos comerciales.",
+      "Gestioné comunicación directa con clientes, transformando necesidades de negocio en soluciones web claras, funcionales y escalables.",
+      "Coordiné múltiples proyectos en simultáneo, priorizando entregas y manteniendo estándares altos de calidad y estabilidad.",
+      "Potencié la experiencia de usuario mediante mejoras en usabilidad, navegación y rendimiento, incrementando engagement y conversiones en proyectos clave."
     ],
     "technologies": [
       "Next.js",
       "React.js",
-      "TailwindCSS",
       "TypeScript",
-      "JavaScript"
+      "JavaScript",
+      "Figma",
+      "Tailwind",
+      "HTML",
+      "CSS"
     ]
   },
   {
-    "id": 7,
-    "title": "Desarrollador Front-end",
+    "id": 3,
+    "title": "Desarrollador Frontend",
     "linkName": "Wapidelo",
     "link": "https://www.wapidelo.com/",
     "date": "Diciembre 2022 - Febrero 2023",
     "items": [
-      "Incrementé la velocidad de carga de datos en un 40% a través de la implementación de tecnologías modernas como GraphQL, provocando una mayor fluidez y mejor experiencia de usuario.",
-      "Implementé y creé desde cero nuevas funcionalidades, expandiendo las opciones disponibles para el usuario.",
-      "Hice pruebas de cada nueva implementación asegurando el correcto desempeño con el resto de componentes."
+      "Implementé soluciones adaptando el producto a necesidades de negocio, priorizando simplicidad y mantenimiento.",
+      "Incorporé nuevas funcionalidades y mejoras sobre la plataforma, ampliando capacidades clave y optimizando la experiencia del usuario.",
+      "Detecté e impulsé mejoras orientadas a usabilidad, rendimiento y calidad general del producto."
     ],
     "technologies": [
       "Next.js",
       "React.js",
-      "TailwindCSS",
       "TypeScript",
       "JavaScript",
-      "Apollo Client",
+      "Tailwind",
       "GraphQL"
     ]
   }

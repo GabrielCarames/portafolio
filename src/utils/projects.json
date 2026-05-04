@@ -7,7 +7,7 @@
     "technologies": [
       "Next.js",
       "TypeScript",
-      "TailwindCSS",
+      "Tailwind",
       "React.js",
       "JavaScript",
       "Zustand"
@@ -26,7 +26,7 @@
     "technologies": [
       "Next.js",
       "TypeScript",
-      "TailwindCSS",
+      "Tailwind",
       "React.js",
       "JavaScript"
     ],
@@ -110,7 +110,7 @@
     "title": "AlkyBank",
     "image": "/alkybank.webp",
     "alt": "Imágen de la página de AlkyBank",
-    "technologies": ["React.js", "Redux", "JavaScript", "TailwindCSS"],
+    "technologies": ["React.js", "Redux", "JavaScript", "Tailwind"],
     "description": "Billetera digital utilizando la Wallet API de SwaggerUI. Creando una billetera podrás realizar tus gastos, transferencias, y pagos.",
     "links": {
       "repository": "https://github.com/NazarenoRios/alkybank",
